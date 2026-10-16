@@ -1,0 +1,26 @@
+{
+  "name": "album-superheroes",
+  "version": "1.0.0",
+  "description": "Ejemplo de API usando localstack y AWS S3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": { 
+    "url": "git+https://github.com/jhonmendex/album-superheroes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonmendex/album-superheroes/issues"
+  },
+  "homepage": "https://github.com/jhonmendex/album-superheroes#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1152.0",
+    "express": "^5.3.0",
+    "multer": "^2.4.0"
+  }
+}

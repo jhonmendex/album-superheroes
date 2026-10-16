@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background: #f4f6f8;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+input,
+button {
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#galeria {
+  display: grid;
+  /* Usamos auto-fill con un ancho fijo máximo para que las tarjetas no se estiren infinitamente */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+  gap: 20px;
+}
+
+#galeria article {
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  max-width: 300px;
+  /* <--- Esto evita que la tarjeta se estire demasiado si hay pocos elementos */
+  margin: 0 auto;
+  /* Centra la tarjeta si está sola */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#galeria img {
+  width: 100%;
+  height: 380px;
+  /* Altura vertical para que luzca como un póster */
+  object-fit: cover;
+  border-radius: 8px;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album de Superheroes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Album de Superheroes</h1>
+
+      <form id="formulario">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required />
+
+        <label for="poder">Poder</label>
+        <input id="poder" name="poder" type="text" required />
+
+        <label for="imagen">Imagen</label>
+        <input id="imagen" name="image" type="file" accept="image/*" required />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p id="mensaje" role="status"></p>
+
+      <h2>Galeria</h2>
+      <section id="galeria"></section>
+    </main>
+  </body>
+</html>
